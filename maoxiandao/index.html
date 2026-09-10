@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冒险岛游戏下载-官方正版客户端与冒险攻略大全</title>
+    <meta name="description" content="冒险岛游戏下载专区，提供官方正版冒险岛客户端、游戏更新资讯、新手职业推荐、冒险攻略与常见问题解答，助你快速开启枫之谷冒险旅程。">
+    <meta name="keywords" content="冒险岛游戏下载,冒险岛,冒险岛下载,冒险岛客户端,冒险岛攻略,枫之谷">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Microsoft YaHei', 'PingFang SC', 'Segoe UI', Roboto, Arial, sans-serif; background: #f0f4f8; color: #2d3748; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* 通用容器 */
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
+
+        /* 页眉 */
+        .site-header { background: #0b2545; padding: 14px 0; border-bottom: 4px solid #f4a261; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { font-size: 28px; }
+        .logo-text { color: #e9c46a; font-size: 26px; font-weight: 700; letter-spacing: 2px; }
+        .logo-text span { color: #f4a261; }
+        .header-right { display: flex; gap: 15px; }
+        .btn { padding: 8px 22px; border-radius: 30px; font-weight: 600; font-size: 14px; transition: 0.3s; border: 2px solid transparent; }
+        .btn-primary { background: #e76f51; color: #fff; border-color: #e76f51; }
+        .btn-primary:hover { background: #f4a261; border-color: #f4a261; }
+        .btn-outline { border-color: #e9c46a; color: #e9c46a; }
+        .btn-outline:hover { background: #e9c46a; color: #0b2545; }
+
+        /* 导航 */
+        .main-nav { background: #13315c; }
+        .nav-list { display: flex; flex-wrap: wrap; justify-content: center; }
+        .nav-list li a { display: block; padding: 12px 28px; color: #d9e2ec; font-weight: 500; transition: 0.2s; border-bottom: 3px solid transparent; }
+        .nav-list li a:hover, .nav-list li a.active { color: #f4a261; border-bottom-color: #f4a261; background: rgba(255,255,255,0.05); }
+
+        /* 首屏 Hero */
+        .hero { background: linear-gradient(135deg, #0b2545 0%, #13315c 50%, #1d4e89 100%); padding: 60px 0 70px; position: relative; overflow: hidden; }
+        .hero::after { content: ''; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path d="M10 10 L90 10 L90 90 L10 90 Z" fill="none" stroke="%23f4a261" stroke-width="2"/><circle cx="30" cy="50" r="8" fill="%23e9c46a"/><circle cx="70" cy="30" r="6" fill="%23e76f51"/><path d="M20 70 L40 60 L55 75 L80 55" fill="none" stroke="%23e9c46a" stroke-width="2"/></svg>'); background-size: 400px 400px; position: absolute; inset: 0; pointer-events: none; }
+        .hero-content { display: flex; align-items: center; justify-content: space-between; gap: 40px; position: relative; z-index: 2; }
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 42px; color: #ffffff; margin-bottom: 15px; line-height: 1.2; }
+        .hero-text h1 span { color: #f4a261; }
+        .hero-text p { color: #b6c2d1; font-size: 17px; margin-bottom: 12px; max-width: 600px; }
+        .hero-badges { margin: 25px 0 30px; display: flex; gap: 15px; flex-wrap: wrap; }
+        .badge { background: rgba(244, 162, 97, 0.2); color: #f4a261; border-radius: 20px; padding: 6px 16px; font-size: 14px; font-weight: 500; }
+        .hero-buttons { display: flex; gap: 18px; flex-wrap: wrap; }
+        .download-hero-btn { display: inline-block; background: #e76f51; color: #fff; padding: 14px 38px; font-size: 18px; font-weight: 700; border-radius: 40px; box-shadow: 0 6px 20px rgba(231, 111, 81, 0.4); transition: 0.3s; border: none; cursor: pointer; }
+        .download-hero-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(231, 111, 81, 0.6); background: #f4a261; }
+        .hero-info { margin-top: 15px; font-size: 14px; color: #8e9fae; }
+        .hero-art { flex: 0 0 320px; text-align: center; padding: 20px; }
+        .hero-art-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 30px 20px; backdrop-filter: blur(5px); }
+        .hero-art-box .game-character { font-size: 80px; line-height: 1; }
+        .hero-art-box h3 { color: #e9c46a; font-size: 22px; margin: 15px 0 8px; }
+        .hero-art-box p { color: #b6c2d1; font-size: 14px; }
+        .hero-art-box .version-tag { display: inline-block; background: #e76f51; color: #fff; border-radius: 12px; padding: 4px 15px; font-size: 13px; margin-top: 15px; }
+
+        /* 信息条 */
+        .info-bar { background: #f4a261; color: #0b2545; padding: 12px 0; font-size: 15px; font-weight: 500; }
+        .info-bar .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+        /* 区块通用 */
+        .section { padding: 60px 0; }
+        .section-title { font-size: 28px; color: #0b2545; margin-bottom: 8px; position: relative; padding-bottom: 12px; display: inline-block; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 60px; height: 4px; background: #e76f51; border-radius: 2px; }
+        .section-subtitle { color: #5a6a7a; margin-bottom: 30px; }
+
+        /* 下载卡片 */
+        .download-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); padding: 30px 25px; text-align: center; transition: 0.3s; border-top: 5px solid #e76f51; height: 100%; }
+        .download-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.12); transform: translateY(-6px); }
+        .download-card .platform-icon { font-size: 45px; margin-bottom: 15px; }
+        .download-card h3 { font-size: 20px; margin-bottom: 8px; color: #0b2545; }
+        .download-card p { color: #5a6a7a; font-size: 14px; margin-bottom: 15px; }
+        .card-btn { display: inline-block; background: #0b2545; color: #fff; padding: 10px 28px; border-radius: 30px; font-size: 14px; transition: 0.3s; }
+        .card-btn:hover { background: #e76f51; }
+        .card-meta { font-size: 12px; color: #94a3b8; margin-top: 12px; }
+
+        /* 游戏特色 */
+        .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; margin-top: 20px; }
+        .feature-item { background: #fff; border-radius: 14px; padding: 25px 20px; box-shadow: 0 2px 15px rgba(0,0,0,0.04); transition: 0.3s; border-left: 4px solid #e9c46a; }
+        .feature-item:hover { border-left-color: #e76f51; transform: translateX(5px); }
+        .feature-item .icon { font-size: 30px; margin-bottom: 12px; }
+        .feature-item h4 { font-size: 17px; color: #13315c; margin-bottom: 8px; }
+        .feature-item p { font-size: 14px; color: #5a6a7a; }
+
+        /* 攻略文章 */
+        .article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 30px; }
+        .article-card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.05); transition: 0.3s; }
+        .article-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+        .article-thumb { background: linear-gradient(120deg, #0b2545, #1d4e89); padding: 20px; font-size: 40px; text-align: center; color: #f4a261; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+        .article-content { padding: 20px; }
+        .article-content .tag { font-size: 12px; background: #e9c46a; color: #0b2545; padding: 3px 10px; border-radius: 12px; font-weight: 600; }
+        .article-content h3 { font-size: 18px; margin: 12px 0 8px; color: #13315c; }
+        .article-content p { font-size: 14px; color: #5a6a7a; margin-bottom: 12px; }
+        .article-content .more { font-size: 14px; color: #e76f51; font-weight: 600; }
+
+        /* 更新日志 */
+        .update-panel { background: #13315c; border-radius: 18px; padding: 30px; color: #d9e2ec; }
+        .update-panel h3 { color: #f4a261; margin-bottom: 20px; font-size: 22px; }
+        .update-item { display: flex; padding: 12px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); }
+        .update-item:last-child { border-bottom: none; }
+        .update-date { width: 110px; color: #e9c46a; font-weight: 600; flex-shrink: 0; }
+        .update-desc { flex: 1; }
+
+        /* FAQ */
+        .faq-list { max-width: 900px; margin: 0 auto; }
+        .faq-item { background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); overflow: hidden; }
+        .faq-question { padding: 18px 25px; font-weight: 600; color: #13315c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc; border-left: 4px solid #e9c46a; }
+        .faq-question::after { content: '+'; font-size: 24px; color: #e76f51; transition: 0.3s; }
+        .faq-item.active .faq-question::after { transform: rotate(45deg); }
+        .faq-answer { padding: 0 25px; max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; color: #4a5568; }
+        .faq-item.active .faq-answer { padding: 5px 25px 20px; max-height: 300px; }
+
+        /* 页脚 */
+        .site-footer { background: #0b2545; color: #b6c2d1; padding: 40px 0 20px; }
+        .footer-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; margin-bottom: 30px; }
+        .footer-col h4 { color: #e9c46a; font-size: 18px; margin-bottom: 15px; }
+        .footer-col ul li { margin-bottom: 8px; }
+        .footer-col ul li a:hover { color: #f4a261; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 14px; }
+
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .article-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero-content { flex-direction: column; text-align: center; }
+            .hero-art { flex: 0 0 auto; }
+            .hero-text h1 { font-size: 34px; }
+        }
+        @media (max-width: 600px) {
+            .features-grid { grid-template-columns: 1fr; }
+            .article-grid { grid-template-columns: 1fr; }
+            .hero-text h1 { font-size: 28px; }
+            .section { padding: 40px 0; }
+            .update-item { flex-direction: column; gap: 5px; }
+            .nav-list li a { padding: 10px 14px; font-size: 14px; }
+            .header-inner { flex-direction: column; }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+    <!-- 页眉 -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-icon">🍁</span>
+                <span class="logo-text">冒险岛<span>·枫之谷</span></span>
+            </div>
+            <div class="header-right">
+                <a href="#download" class="btn btn-primary">立即下载</a>
+                <a href="#guide" class="btn btn-outline">新手攻略</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 导航 -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#download">下载中心</a></li>
+                <li><a href="#features">游戏特色</a></li>
+                <li><a href="#guide">冒险攻略</a></li>
+                <li><a href="#update">版本动态</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首屏 Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>冒险岛游戏<span>下载</span> · 开启你的枫之谷传说</h1>
+                <p>全新版本已上线，经典横版卷轴冒险，五大职业自由选择，与好友一起探索神秘岛、挑战黑色之翼。官方正版客户端极速下载，安全稳定，即刻启程！</p>
+                <div class="hero-badges">
+                    <span class="badge">✓ 官方正版</span>
+                    <span class="badge">✓ 极速下载</span>
+                    <span class="badge">✓ 支持 Win/Mac</span>
+                    <span class="badge">✓ 新服开启</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#download" class="download-hero-btn">🎮 下载冒险岛客户端</a>
+                </div>
+                <p class="hero-info">最新版本: V2025.1.0 | 文件大小: 2.8GB | 更新日期: 2025-03-20</p>
+            </div>
+            <div class="hero-art">
+                <div class="hero-art-box">
+                    <div class="game-character">🧙‍♂️⚔️</div>
+                    <h3>枫之谷冒险团</h3>
+                    <p>五大职业 · 百种技能 · 无限连击</p>
+                    <span class="version-tag">TVC 2025 新纪元</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 信息条 -->
+    <div class="info-bar">
+        <div class="container">
+            <span>🔥 热门推荐：全新“混沌副本”上线</span>
+            <span>📢 公告：3月28日停机维护公告</span>
+        </div>
+    </div>
+
+    <!-- 下载中心 -->
+    <section class="section" id="download">
+        <div class="container">
+            <h2 class="section-title">冒险岛游戏下载</h2>
+            <p class="section-subtitle">选择你的平台，下载官方客户端，开启冒险旅程</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+                <div class="download-card">
+                    <div class="platform-icon">🖥️</div>
+                    <h3>Windows 客户端</h3>
+                    <p>支持 Windows 10/11 64位，完整版客户端，含最新补丁。</p>
+                    <a href="#" class="card-btn">下载 Windows 版</a>
+                    <div class="card-meta">版本 V2025.1.0 · 2.8GB</div>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">🍎</div>
+                    <h3>macOS 客户端</h3>
+                    <p>原生适配 macOS 12+，Apple Silicon 及 Intel 芯片均支持。</p>
+                    <a href="#" class="card-btn">下载 macOS 版</a>
+                    <div class="card-meta">版本 V2025.1.0 · 2.9GB</div>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">📱</div>
+                    <h3>Android 移动版</h3>
+                    <p>随时随地冒险，支持手机与平板，需 Android 10 以上。</p>
+                    <a href="#" class="card-btn">下载 Android 版</a>
+                    <div class="card-meta">版本 V3.2.1 · 120MB</div>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">📲</div>
+                    <h3>iOS 移动版</h3>
+                    <p>App Store 官方应用，支持 iPhone/iPad，iOS 14+ 系统。</p>
+                    <a href="#" class="card-btn">前往 App Store</a>
+                    <div class="card-meta">版本 V3.2.1 · 128MB</div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: #5a6a7a; font-size: 14px;">⚠️ 请从官方渠道下载，避免使用非正规安装包，以防账号安全风险。</p>
+        </div>
+    </section>
+
+    <!-- 游戏特色 -->
+    <section class="section" id="features" style="background: #e9eef3;">
+        <div class="container">
+            <h2 class="section-title">游戏特色亮点</h2>
+            <p class="section-subtitle">感受经典与创新融合的冒险世界</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="icon">🌸</div>
+                    <h4>童话般画面</h4>
+                    <p>清新明亮的美术风格，充满幻想色彩的场景与角色，治愈系冒险氛围。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚔️</div>
+                    <h4>五大经典职业</h4>
+                    <p>战士、魔法师、弓箭手、飞侠、海盗，每个职业拥有独特转职路线与技能体系。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🐉</div>
+                    <h4>特色宠物系统</h4>
+                    <p>超过200种宠物伙伴，可进化、可骑乘，还能协助战斗与拾取道具。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🏝️</div>
+                    <h4>丰富地图探索</h4>
+                    <p>从射手村到神秘岛，从水下世界到天空之城，数十个主题区域等你探索。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">👥</div>
+                    <h4>组队副本合作</h4>
+                    <p>挑战精英BOSS需要团队配合，与好友组建公会，享受合作乐趣。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🎡</div>
+                    <h4>迷你游戏互动</h4>
+                    <p>钓鱼、演奏、卡牌对战等休闲玩法，让冒险之余也能放松身心。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🧵</div>
+                    <h4>时装自由搭配</h4>
+                    <p>海量时装、发型、脸型，打造独一无二的角色形象，个性十足。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>公平竞技场</h4>
+                    <p>定期开放PVP对战与排名赛，比拼操作与装备，荣誉等你来夺。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 攻略资讯 -->
+    <section class="section" id="guide">
+        <div class="container">
+            <h2 class="section-title">冒险攻略与指南</h2>
+            <p class="section-subtitle">新手入门必读 · 老手进阶参考</p>
+            <div class="article-grid">
+                <article class="article-card">
+                    <div class="article-thumb">🧑‍🌾</div>
+                    <div class="article-content">
+                        <span class="tag">新手入门</span>
+                        <h3>1-30级快速升级路线</h3>
+                        <p>从蘑菇城到勇士部落，详解前期最优任务链与刷怪点，助你快速摆脱新手期。</p>
+                        <a href="#" class="more">阅读更多 →</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-thumb">⚔️</div>
+                    <div class="article-content">
+                        <span class="tag">职业攻略</span>
+                        <h3>五大职业对比与选择建议</h3>
+                        <p>输出、生存、辅助能力全面分析，根据你的游戏习惯推荐最合适的职业。</p>
+                        <a href="#" class="more">阅读更多 →</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-thumb">💎</div>
+                    <div class="article-content">
+                        <span class="tag">装备养成</span>
+                        <h3>装备强化与星之力详解</h3>
+                        <p>从普通装备到传说级，强化卷轴、星之力提升的完整机制与注意事项。</p>
+                        <a href="#" class="more">阅读更多 →</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-thumb">🐉</div>
+                    <div class="article-content">
+                        <span class="tag">BOSS攻略</span>
+                        <h3>混沌炎魔打法要点</h3>
+                        <p>队伍配置、走位技巧、技能躲避时机，让你挑战史诗级BOSS不再翻车。</p>
+                        <a href="#" class="more">阅读更多 →</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-thumb">💰</div>
+                    <div class="article-content">
+                        <span class="tag">经济指南</span>
+                        <h3>快速赚取枫币的实用方法</h3>
+                        <p>日常任务、专业采集、制作代工、市场倒卖等多种合法赚钱路径分享。</p>
+                        <a href="#" class="more">阅读更多 →</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-thumb">🎯</div>
+                    <div class="article-content">
+                        <span class="tag">活动攻略</span>
+                        <h3>周年庆活动全解析</h3>
+                        <p>每年一度的盛大活动，奖励兑换指南与隐藏任务触发条件汇总。</p>
+                        <a href="#" class="more">阅读更多 →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 版本动态 / 更新日志 -->
+    <section class="section" id="update" style="background: #e9eef3;">
+        <div class="container">
+            <h2 class="section-title">版本动态与更新</h2>
+            <p class="section-subtitle">了解冒险岛最新版本内容与维护计划</p>
+            <div class="update-panel">
+                <h3>📌 近期更新日志</h3>
+                <div class="update-item">
+                    <div class="update-date">2025-03-18</div>
+                    <div class="update-desc">新职业“墨玄”正式上线，开放拳击系技能树，增加专属剧情任务。</div>
+                </div>
+                <div class="update-item">
+                    <div class="update-date">2025-03-10</div>
+                    <div class="update-desc">“混沌副本”难度调整，降低前两阶段怪物血量，提高装备掉落概率。</div>
+                </div>
+                <div class="update-item">
+                    <div class="update-date">2025-03-01</div>
+                    <div class="update-desc">春季时装礼包上架，新增“樱花精灵”系列外观，限时出售至4月15日。</div>
+                </div>
+                <div class="update-item">
+                    <div class="update-date">2025-02-22</div>
+                    <div class="update-desc">修复部分地图中怪物刷新异常的问题，优化了拍卖行搜索功能。</div>
+                </div>
+                <div class="update-item">
+                    <div class="update-date">2025-02-14</div>
+                    <div class="update-desc">情人节主题活动开启，完成每日任务可获得限定爱情戒指。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="section-title">下载与游戏常见问题</h2>
+            <p class="section-subtitle">我们汇总了冒险岛游戏下载与游玩中常见的问题</p>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question">下载冒险岛客户端需要配置什么电脑要求？</div>
+                    <div class="faq-answer"><p>最低配置：Intel Core i3处理器、4GB内存、集成显卡、20GB可用硬盘空间。推荐配置：Intel Core i5或更高、8GB内存、独立显卡（GTX 960以上）、固态硬盘。游戏对配置要求较为友好，大多数近五年内的电脑均可流畅运行。</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">安装冒险岛游戏需要注意什么？</div>
+                    <div class="faq-answer"><p>建议关闭后台杀毒软件后再安装，安装路径请勿包含中文或特殊字符，否则可能导致游戏无法正常启动。首次运行需连接网络完成补丁更新，请保证网络稳定。</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">游戏下载到一半中断怎么办？</div>
+                    <div class="faq-answer"><p>建议使用官方下载器，支持断点续传功能。若使用浏览器直接下载，中断后可重新点击下载，浏览器会尝试从断点继续。若反复失败，可尝试更换网络环境或使用下载工具。</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">移动端和PC端数据互通吗？</div>
+                    <div class="faq-answer"><p>目前移动版与PC版使用同一账号体系，但角色数据并非完全互通。PC版的角色与移动版角色独立存在，但部分联动活动可同时参与。具体请关注官方公告。</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何验证下载的客户端是官方正版？</div>
+                    <div class="faq-answer"><p>请务必认准官方网站（maplestory.nexon.com 或对应地区官网）的下载链接。安装后可在游戏登录器界面查看数字签名，正版客户端具有Nexon或相关运营方的有效数字签名。切勿使用第三方破解版或私服。</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">游戏出现卡顿或闪退如何解决？</div>
+                    <div class="faq-answer"><p>首先检查显卡驱动是否为最新版本，其次可尝试在游戏设置中降低画质、关闭特效。若仍然闪退，请验证游戏文件完整性（官方启动器提供此功能）或重新安装游戏。</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <h4>🍁 冒险岛游戏下载</h4>
+                    <p style="max-width: 300px;">提供最安全、最快速的冒险岛游戏下载服务，分享游戏攻略与最新资讯，陪伴每一位冒险家的成长。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">官方网站</a></li>
+                        <li><a href="#">玩家社区</a></li>
+                        <li><a href="#">客服中心</a></li>
+                        <li><a href="#">账号管理</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="#">游戏资料库</a></li>
+                        <li><a href="#">版本更新列表</a></li>
+                        <li><a href="#">周边商城</a></li>
+                        <li><a href="#">合作伙伴</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>友情提示</h4>
+                    <p style="font-size: 13px;">适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 冒险岛游戏下载站 · 本页面仅为信息展示，游戏版权归原厂商所有。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 交互
+        document.querySelectorAll('.faq-question').forEach(function(question) {
+            question.addEventListener('click', function() {
+                var parent = this.parentElement;
+                // 关闭其他已展开的
+                document.querySelectorAll('.faq-item').forEach(function(item) {
+                    if (item !== parent) {
+                        item.classList.remove('active');
+                    }
+                });
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
