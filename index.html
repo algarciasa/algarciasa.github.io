@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>德宏师专-德宏师范高等专科学校官网信息与招生指南</title>
+    <meta name="description" content="德宏师专即德宏师范高等专科学校，位于云南省德宏州。本页提供德宏师专概况、专业设置、招生动态、校园生活及常见问答，为考生与在校生提供实用信息参考。">
+    <meta name="keywords" content="德宏师专,德宏师范高等专科学校,德宏师专官网,德宏师专招生,专科学校,云南高校">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+            background-color: #f4f7f6;
+            color: #1f2a2e;
+            line-height: 1.7;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 页眉 */
+        .site-header {
+            background: #0b3b2f;
+            color: #fff;
+            padding: 18px 0;
+            border-bottom: 3px solid #e8b54a;
+        }
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: #e8b54a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: #0b3b2f;
+            font-size: 20px;
+        }
+        .site-title {
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .site-sub {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-top: 2px;
+        }
+        .header-contact {
+            font-size: 0.9rem;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 30px;
+        }
+        .header-contact span {
+            margin-right: 15px;
+        }
+        /* 导航 */
+        .main-nav {
+            background: #0e4a3a;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .nav-list li a {
+            display: block;
+            padding: 14px 28px;
+            color: #f0f7f5;
+            font-weight: 500;
+            font-size: 1.02rem;
+            transition: background 0.2s;
+        }
+        .nav-list li a:hover {
+            background: #176a54;
+            color: #fff;
+        }
+        /* 首屏大图 */
+        .hero {
+            background: linear-gradient(135deg, #123f33, #1f6b54);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: 0 auto 30px;
+            opacity: 0.92;
+        }
+        .hero-btn {
+            background: #e8b54a;
+            color: #0b2a21;
+            padding: 12px 32px;
+            border-radius: 40px;
+            font-weight: 700;
+            display: inline-block;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .hero-meta {
+            margin-top: 25px;
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+        /* 通用区块 */
+        .section {
+            padding: 55px 0;
+        }
+        .section-title {
+            font-size: 1.9rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #0b3b2f;
+            position: relative;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #e8b54a;
+            margin: 10px auto 0;
+        }
+        .section-sub {
+            text-align: center;
+            color: #4c5b57;
+            margin-bottom: 35px;
+            font-size: 1rem;
+        }
+        /* 学校简介卡片 */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        .intro-text p {
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+        }
+        .intro-highlight {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            padding: 25px 28px;
+            border-left: 6px solid #e8b54a;
+        }
+        .intro-highlight li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #dde5e2;
+            display: flex;
+            align-items: center;
+        }
+        .intro-highlight li:last-child {
+            border-bottom: none;
+        }
+        .intro-highlight li::before {
+            content: "🌿";
+            margin-right: 12px;
+        }
+        /* 专业与院系卡片 */
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .faculty-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            transition: all 0.25s;
+            border-top: 4px solid #0e4a3a;
+        }
+        .faculty-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+        }
+        .faculty-card h3 {
+            font-size: 1.25rem;
+            color: #0b3b2f;
+            margin-bottom: 10px;
+        }
+        .faculty-card p {
+            color: #3e504a;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        .tag {
+            display: inline-block;
+            background: #edf6f2;
+            color: #0e4a3a;
+            padding: 3px 12px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 8px;
+        }
+        /* 招生动态 */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        .news-item {
+            background: white;
+            padding: 20px 25px;
+            border-radius: 14px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+        }
+        .news-item .date {
+            font-size: 0.8rem;
+            color: #8b9c97;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+        .news-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #1c3b32;
+        }
+        .news-item p {
+            font-size: 0.95rem;
+            color: #435a53;
+            flex: 1;
+        }
+        .news-item .more {
+            margin-top: 12px;
+            color: #0e4a3a;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        /* 校园生活特色 */
+        .life-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .life-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .life-icon {
+            font-size: 3rem;
+            padding: 25px 0 10px;
+            background: #f0faf6;
+        }
+        .life-card h3 {
+            font-size: 1.1rem;
+            margin: 5px 0 8px;
+            color: #0b3b2f;
+        }
+        .life-card p {
+            padding: 0 15px;
+            font-size: 0.88rem;
+            color: #4a5f59;
+        }
+        /* FAQ */
+        .faq-wrap {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 14px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            border-left: 5px solid #e8b54a;
+        }
+        .faq-q {
+            padding: 18px 24px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #173c31;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-a {
+            padding: 0 24px 18px;
+            color: #3e5c53;
+            display: none;
+            font-size: 0.96rem;
+        }
+        .faq-a.show {
+            display: block;
+        }
+        .faq-toggle {
+            font-size: 1.3rem;
+            color: #b4842c;
+            font-weight: 400;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #0b2e25;
+            color: #cfe0da;
+            padding: 35px 0 20px;
+            font-size: 0.9rem;
+        }
+        .footer-col {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+        .footer-col h4 {
+            color: #e8b54a;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        .footer-col a {
+            display: block;
+            margin-bottom: 8px;
+            color: #b8d0c8;
+        }
+        .footer-col a:hover {
+            color: #ffffff;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 18px;
+            font-size: 0.8rem;
+            color: #9bb7ae;
+        }
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .faculty-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .life-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-col {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .header-wrap {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            .nav-list li a {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            .section {
+                padding: 35px 0;
+            }
+            .faculty-grid,
+            .life-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-col {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .logo-area {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-wrap">
+            <div class="logo-area">
+                <div class="logo-icon">德</div>
+                <div>
+                    <div class="site-title">德宏师范高等专科学校</div>
+                    <div class="site-sub">德宏师专 · 立足边疆 · 服务发展</div>
+                </div>
+            </div>
+            <div class="header-contact">
+                <span>📞 招生咨询：0692-2128xxx</span>
+                <span>📍 云南 · 德宏州芒市</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul class="nav-list container">
+            <li><a href="#intro">学校概况</a></li>
+            <li><a href="#departments">院系专业</a></li>
+            <li><a href="#news">招生动态</a></li>
+            <li><a href="#life">校园生活</a></li>
+            <li><a href="#faq">常见问题</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>德宏师专 · 筑梦边疆</h1>
+        <p>德宏师范高等专科学校（简称“德宏师专”）是滇西地区重要的高等教育基地。学校以师范教育为传统，兼有多学科协调发展，致力于培养扎根边疆、服务基础教育的应用型人才。</p>
+        <a href="#news" class="hero-btn">查看最新招生动态</a>
+        <div class="hero-meta">⏱ 2025年招生工作已启动 | 欢迎广大考生报考</div>
+    </section>
+
+    <main>
+        <!-- 学校简介 -->
+        <section class="section" id="intro">
+            <div class="container">
+                <h2 class="section-title">走进德宏师专</h2>
+                <p class="section-sub">了解学校历史、定位与办学特色</p>
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <p>德宏师范高等专科学校坐落于美丽的孔雀之乡——云南省德宏傣族景颇族自治州首府芒市。学校前身可追溯至上世纪五十年代创办的师范学校，历经数十年发展，现已成为一所以教师教育为特色、多专业协调发展的全日制公办普通高等专科学校。</p>
+                        <p>学校紧密结合区域经济社会发展需求，面向全国部分省份招生，为边疆民族地区培养了大量基础教育教师和各行业实用型人才。校园环境优美，民族文化和睦共融，学习氛围浓厚。</p>
+                        <p>近年来，学校持续深化教育教学改革，加强产教融合与校企合作，不断提升人才培养质量，毕业生就业率保持良好态势，深受用人单位好评。</p>
+                    </div>
+                    <div>
+                        <ul class="intro-highlight">
+                            <li><strong>办学类型：</strong>全日制公办普通高等专科学校</li>
+                            <li><strong>校训精神：</strong>立德树人，笃学致用</li>
+                            <li><strong>所在城市：</strong>云南省德宏州芒市</li>
+                            <li><strong>优势领域：</strong>小学教育、学前教育、民族文化</li>
+                            <li><strong>在校生规模：</strong>数千人（以学校官网为准）</li>
+                            <li><strong>校园特色：</strong>多民族融合、国际化交流窗口</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 院系专业 -->
+        <section class="section" id="departments" style="background: #eef4f1;">
+            <div class="container">
+                <h2 class="section-title">院系与专业设置</h2>
+                <p class="section-sub">多学科协调发展，满足不同发展志向</p>
+                <div class="faculty-grid">
+                    <article class="faculty-card">
+                        <h3>人文学院</h3>
+                        <p>涵盖语文教育、历史教育、文秘等专业，注重人文素养与教学技能培养，是学校传统优势学院之一。</p>
+                        <span class="tag">师范方向</span>
+                    </article>
+                    <article class="faculty-card">
+                        <h3>数学与信息学院</h3>
+                        <p>开设数学教育、现代教育技术、计算机应用技术等专业，强化逻辑思维与信息技术融合能力。</p>
+                        <span class="tag">热门理科</span>
+                    </article>
+                    <article class="faculty-card">
+                        <h3>学前教育学院</h3>
+                        <p>重点建设的特色学院，培养幼儿教师与早教人才，配有实训中心与艺术技能课程。</p>
+                        <span class="tag">就业热门</span>
+                    </article>
+                    <article class="faculty-card">
+                        <h3>外国语学院</h3>
+                        <p>以英语教育为主，兼设东南亚语种方向，发挥德宏面向南亚东南亚的区位优势。</p>
+                        <span class="tag">特色应用</span>
+                    </article>
+                    <article class="faculty-card">
+                        <h3>艺术学院</h3>
+                        <p>音乐教育、美术教育、民族舞蹈等方向，注重传承边疆民族文化艺术。</p>
+                        <span class="tag">民族特色</span>
+                    </article>
+                    <article class="faculty-card">
+                        <h3>经济与管理学院</h3>
+                        <p>会计、旅游管理、市场营销等专业，服务地方现代服务业与乡村振兴人才需求。</p>
+                        <span class="tag">应用型</span>
+                    </article>
+                </div>
+                <p style="text-align:center; margin-top:30px; color:#4f6a61;">※ 具体招生专业以学校当年公布计划为准</p>
+            </div>
+        </section>
+
+        <!-- 招生动态 -->
+        <section class="section" id="news">
+            <div class="container">
+                <h2 class="section-title">招生与校园动态</h2>
+                <p class="section-sub">获取最新资讯，把握重要时间节点</p>
+                <div class="news-grid">
+                    <article class="news-item">
+                        <div class="date">📅 2025-05-18</div>
+                        <h3>德宏师专2025年招生章程正式发布</h3>
+                        <p>学校招生录取规则、专业要求及收费标准均已公布，考生可关注官方渠道了解详细内容。</p>
+                        <a href="#" class="more">阅读详情 →</a>
+                    </article>
+                    <article class="news-item">
+                        <div class="date">📅 2025-05-06</div>
+                        <h3>校园开放日暨招生咨询活动预告</h3>
+                        <p>为方便广大考生和家长了解校园环境与办学条件，学校将于近期举办线下开放日活动。</p>
+                        <a href="#" class="more">了解参与方式 →</a>
+                    </article>
+                    <article class="news-item">
+                        <div class="date">📅 2025-04-20</div>
+                        <h3>小学教育专业认证工作稳步推进</h3>
+                        <p>学校持续加强师范专业建设，提升人才培养质量，积极筹备专业认证相关事宜。</p>
+                        <a href="#" class="more">查看专业建设 →</a>
+                    </article>
+                    <article class="news-item">
+                        <div class="date">📅 2025-04-02</div>
+                        <h3>德宏师专与地方多所小学共建实践基地</h3>
+                        <p>深化校地合作，为学生提供更加优质的教育见习与实习平台，助力教学能力提升。</p>
+                        <a href="#" class="more">合作动态 →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 校园生活 -->
+        <section class="section" id="life" style="background: #eef4f1;">
+            <div class="container">
+                <h2 class="section-title">校园生活剪影</h2>
+                <p class="section-sub">在德宏师专，体验多彩的大学时光</p>
+                <div class="life-grid">
+                    <div class="life-card">
+                        <div class="life-icon">🏞️</div>
+                        <h3>民族风情</h3>
+                        <p>傣族泼水节、景颇族目瑙纵歌等校园活动轮番上演，感受多元文化魅力。</p>
+                    </div>
+                    <div class="life-card">
+                        <div class="life-icon">📖</div>
+                        <h3>图书馆</h3>
+                        <p>馆藏丰富，设有自习区与电子阅览室，为学子提供安静舒适的学习空间。</p>
+                    </div>
+                    <div class="life-card">
+                        <div class="life-icon">⚽</div>
+                        <h3>运动场馆</h3>
+                        <p>标准田径场、篮球场、室内体育馆，鼓励学生强健体魄，全面发展。</p>
+                    </div>
+                    <div class="life-card">
+                        <div class="life-icon">🍜</div>
+                        <h3>特色食堂</h3>
+                        <p>汇集滇西风味与各地菜肴，兼顾不同饮食习惯，价格实惠营养均衡。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section class="section" id="faq">
+            <div class="container faq-wrap">
+                <h2 class="section-title">考生关心的问题</h2>
+                <p class="section-sub">关于报考与在校生活的常见解答</p>
+                <div class="faq-item">
+                    <div class="faq-q">德宏师专的招生代码是多少？<span class="faq-toggle">+</span></div>
+                    <div class="faq-a">德宏师范高等专科学校的国标代码及云南省内招生代码以各省招生考试院公布为准。考生填报志愿时请仔细核对学校名称与代码。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">学校有哪些奖学金或助学政策？<span class="faq-toggle">+</span></div>
+                    <div class="faq-a">学校设有国家奖学金、国家励志奖学金、国家助学金以及校级奖学金。家庭经济困难学生可申请生源地信用助学贷款，具体政策可查阅随录取通知书寄送的资助手册。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">专科毕业后可以继续专升本吗？<span class="faq-toggle">+</span></div>
+                    <div class="faq-a">可以。应届专科毕业生可参加云南省统一组织的普通专升本考试，升入本科院校继续深造。学校也会提供相应的辅导与支持。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">学校的生活环境如何？宿舍条件怎么样？<span class="faq-toggle">+</span></div>
+                    <div class="faq-a">校园绿化好，宿舍一般为6人间，配有独立书桌、衣柜及网络接口。公共区域有洗衣机、热水供应等设施，生活便利。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">非师范类专业可以考教师资格证吗？<span class="faq-toggle">+</span></div>
+                    <div class="faq-a">可以。符合条件的学生均可按国家政策报名参加中小学教师资格考试。学校也开设相关培训课程辅助备考。</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="section" id="contact" style="background: #eef4f1;">
+            <div class="container">
+                <h2 class="section-title">联系德宏师专</h2>
+                <p class="section-sub">官方信息渠道及招生咨询方式</p>
+                <div style="text-align: center; max-width: 700px; margin: 0 auto; background: white; padding: 35px 30px; border-radius: 20px;">
+                    <p style="font-size: 1.1rem; margin-bottom: 12px;">📌 学校地址：云南省德宏傣族景颇族自治州芒市拉怀村（德宏师专新校区）</p>
+                    <p style="margin-bottom: 12px;">📞 招生办公室电话：0692-2128xxx（请以官网公布为准）</p>
+                    <p style="margin-bottom: 12px;">📧 招生邮箱：dhsz_zs@example.edu.cn（仅示例）</p>
+                    <p style="color: #5d726a;">🌐 更多信息请访问学校官方网站或关注官方微信公众号。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-col">
+                <div>
+                    <h4>德宏师专</h4>
+                    <p>德宏师范高等专科学校是一所立足边疆、面向未来的高等学府。我们致力于培养有理想、有本领、有担当的时代新人。</p>
+                </div>
+                <div>
+                    <h4>快速导航</h4>
+                    <a href="#intro">学校概况</a>
+                    <a href="#departments">院系专业</a>
+                    <a href="#news">招生动态</a>
+                    <a href="#faq">常见问题</a>
+                </div>
+                <div>
+                    <h4>相关链接</h4>
+                    <a href="#">云南省招生考试院</a>
+                    <a href="#">教育部阳光高考平台</a>
+                    <a href="#">德宏州人民政府</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 德宏师范高等专科学校信息参考页 · 本页为聚合信息展示，最终以学校官方发布为准</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 展开/收起
+        document.querySelectorAll('.faq-q').forEach(function(q) {
+            q.addEventListener('click', function() {
+                var answer = this.nextElementSibling;
+                var toggle = this.querySelector('.faq-toggle');
+                if (answer.classList.contains('show')) {
+                    answer.classList.remove('show');
+                    toggle.textContent = '+';
+                } else {
+                    // 关闭其他已展开项（可选，更整洁）
+                    document.querySelectorAll('.faq-a').forEach(function(a) {
+                        a.classList.remove('show');
+                    });
+                    document.querySelectorAll('.faq-toggle').forEach(function(t) {
+                        t.textContent = '+';
+                    });
+                    answer.classList.add('show');
+                    toggle.textContent = '−';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
